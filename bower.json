@@ -1,0 +1,15 @@
+{
+  "name": "groengaard.dk",
+  "description": "Personal website of Christian Grøngaard",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianhg/groengaard.dk.git"
+  },
+  "main": "./dist/index.html",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-google-analytics": "~1.1.3"
+  }
+}
