@@ -21,11 +21,30 @@ body {
   }
 }
 
-h1 {
-  font-family: $font-family-display;
+img {
+  display: block;
+  max-width: 100%;
 }
 
+/*
+ * Links
+ */
+a {
+  border-bottom: 1px solid rgba($color-primary, 0.3);
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-border;
+
+  &:hover {
+    border-color: rgba($color-primary, 0.8);
+  }
+}
+
+/*
+ * Headings
+ */
 h1 {
+  font-family: $font-family-display;
   font-size: rem(16px);
   letter-spacing: 0.1em;
   margin-bottom: $line-height-base;
@@ -36,17 +55,4 @@ h1 {
     line-height: $line-height-base * 1.5;
     margin-bottom: $line-height-base * 1.5;
   }
-
-  .hero & {
-    span {
-      display: block;
-      color: $color-grey;
-      letter-spacing: 0.095em;
-    }
-  }
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
