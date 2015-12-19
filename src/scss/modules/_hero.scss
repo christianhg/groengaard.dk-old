@@ -25,4 +25,12 @@
       width: $line-height-base / $logoAspect * 10;
     }
   }
+
+  h1 {
+    span {
+      display: block;
+      color: $color-grey;
+      letter-spacing: 0.095em;
+    }
+  }
 }
