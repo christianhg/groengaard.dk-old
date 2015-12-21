@@ -13,12 +13,6 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-light;
   line-height: $line-height-base;
-  min-height: 100%;
-  overflow-x: hidden;
-
-  &.scrollable {
-    overflow-y: auto;
-  }
 }
 
 img {
@@ -43,16 +37,29 @@ a {
 /*
  * Headings
  */
+h1,
+h2 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 h1 {
   font-family: $font-family-display;
-  font-size: rem(16px);
-  letter-spacing: 0.1em;
+  font-size: rem(18px);
   margin-bottom: $line-height-base;
-  text-transform: uppercase;
 
   @include bp(800) {
     font-size: rem(21px);
     line-height: $line-height-base * 1.5;
     margin-bottom: $line-height-base * 1.5;
+  }
+}
+
+h2 {
+  font-size: rem(12px);
+  margin-bottom: $line-height-base / 2;
+
+  @include bp(800) {
+    font-size: rem(14px);
   }
 }
