@@ -7,10 +7,9 @@
   var concat = require('gulp-concat');
   var flatten = require('gulp-flatten');
   var gulp = require('gulp');
+  var htmlmin = require('gulp-htmlmin');
   var inject = require('gulp-inject');
   var jshint = require('gulp-jshint');
-  // var minifyCSS = require('gulp-minify-css');
-  var minifyHTML = require('gulp-minify-html');
   var nano = require('gulp-cssnano');
   var ngAnnotate = require('gulp-ng-annotate');
   var plumber = require('gulp-plumber');
@@ -234,7 +233,7 @@
         gulp.src(['./dist/js/vendor.min.js']),
         {relative: true, name: 'vendor'}
       ))
-      .pipe(minifyHTML())
+      .pipe(htmlmin())
       .pipe(gulp.dest('./dist'));
   });
 
