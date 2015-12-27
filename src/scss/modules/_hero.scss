@@ -18,6 +18,7 @@
 
   &--logo {
     margin: 0 auto $line-height-base;
+    transition: $transition-hero--logo;
     width: $line-height-base / $logoAspect * 6;
 
     @include bp(800) {
@@ -28,11 +29,13 @@
 
   &--title {
     margin-bottom: 0;
+    transition: $transition-hero--title;
   }
 
   &--subtitle {
     color: $color-grey;
     letter-spacing: 0.136em;
     margin-bottom: 0;
+    transition: $transition-hero--subtitle;
   }
 }

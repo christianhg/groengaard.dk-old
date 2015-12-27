@@ -31,7 +31,10 @@
         ],
         js: [
             'bower_components/angular/angular.min.js',
+            'bower_components/angular-animate/angular-animate.min.js',
             'bower_components/angular-google-analytics/dist/angular-google-analytics.min.js',
+            'bower_components/moment/min/moment.min.js',
+            'bower_components/angular-moment/angular-moment.min.js',
             'bower_components/angular-ui-router/release/angular-ui-router.min.js',
         ],
     };

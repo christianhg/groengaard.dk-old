@@ -1,9 +1,9 @@
 <div class="hero">
   <header class="hero--inner">
-    <div class="hero--logo">
+    <div class="hero--logo" ng-class="{'is-hidden': !vm.showLogo, 'is-visible': vm.showLogo}">
       <img src="graphics/g.svg" alt="Christian Grøngaard">
     </div>
-    <h1 class="hero--title">Christian Hamburger Grøngaard</h1>
-    <h2 class="hero--subtitle">{{vm.tagline}}</h2>
+    <h1 class="hero--title" ng-class="{'is-hidden': !vm.showLogo, 'is-visible': vm.showTitle}">Christian Hamburger Grøngaard</h1>
+    <h2 class="hero--subtitle" ng-class="{'is-hidden': !vm.showLogo, 'is-visible': vm.showSubtitle}">{{vm.tagline}}</h2>
   </header>
 </div>

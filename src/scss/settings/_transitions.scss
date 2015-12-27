@@ -1,4 +1,4 @@
-$transition-easing: ease-in-out;
-$transition-time: 0.2s;
-
-$transition-border: border-color $transition-time $transition-easing;
+$transition-hero--logo: opacity 1s ease-in-out;
+$transition-hero--title: opacity 1s ease-in-out;
+$transition-hero--subtitle: opacity 1s ease-in-out;
+$transition-border: border-color 0.2s ease-in-out;
